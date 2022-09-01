@@ -31,24 +31,33 @@ $(".box").on("click", function(){
 
 $("#theme").on("click", function(){
     // Dark Mode Configuration
-    if ($("#theme").hasClass("fa-sun")){
-        $("#theme").removeClass("fa-sun");
-        $("#theme").addClass("fa-moon");
+    if ($("#theme").hasClass("fa-moon")){
+        $("#theme").addClass("fa-sun");
+        $("#theme").removeClass("fa-moon");
         document.documentElement.style.setProperty('--background-color-dark', '#222831');
         document.documentElement.style.setProperty('--primary-text-color', '#eeeeee');
         document.documentElement.style.setProperty('--secondary-text-color', '#00adb5');
         $("footer").css("color","rgb(183, 183, 183)");
         $("#theme").css("color","white");
+        $(".red").css("background-color","rgb(188, 7, 7)");
+        $(".green").css("background-color","rgb(3, 91, 3)");
+        $(".yellow").css("background-color","rgb(150, 150, 9)");
+        $(".blue").css("background-color","rgb(33, 33, 123");
+
     }
     // Light Mode Configuration
     else{
-        $("#theme").addClass("fa-sun");
-        $("#theme").removeClass("fa-moon");
+        $("#theme").removeClass("fa-sun");
+        $("#theme").addClass("fa-moon");
         document.documentElement.style.setProperty('--background-color-dark', '#d2d2d2');
         document.documentElement.style.setProperty('--primary-text-color', '#000000');
         document.documentElement.style.setProperty('--secondary-text-color', '#086e9a');
         $("footer").css("color","black");
         $("#theme").css("color","black");
+        $(".red").css("background-color","rgb(227, 10, 10)");
+        $(".green").css("background-color","rgb(7, 190, 7)");
+        $(".yellow").css("background-color","rgb(202, 202, 8)");
+        $(".blue").css("background-color","rgb(31, 31, 184)");
     }
 });
 
